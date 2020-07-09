@@ -1,0 +1,23 @@
+% latex table generated in R 3.5.3 by xtable 1.8-4 package
+% Mon May 25 11:18:24 2020
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrrr}
+  \hline
+trait & h2 & r & PA \\ 
+  \hline
+Wt & 0.27 & 0.45 & 0.52 \\ 
+  Len & 0.38 & 0.61 & 0.62 \\ 
+  Wd & 0.27 & 0.42 & 0.52 \\ 
+  °Bx & 0.10 & 0.45 & 0.31 \\ 
+  \%DM & 0.13 & 0.51 & 0.36 \\ 
+  L* & 0.18 & 0.55 & 0.42 \\ 
+  a* & 0.23 & 0.62 & 0.48 \\ 
+  b* & 0.18 & 0.55 & 0.42 \\ 
+  Shp & 0.37 & 0.58 & 0.61 \\ 
+  FrtCt & 0.20 &  & 0.45 \\ 
+  TotalWt & 0.12 &  & 0.35 \\ 
+  TotalDM & 0.11 &  & 0.33 \\ 
+   \hline
+\end{tabular}
+\end{table}

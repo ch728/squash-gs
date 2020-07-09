@@ -1,0 +1,7 @@
+library(tidyverse)
+dry <- read_csv("dry_weight/combined_dry.csv")
+wet <- read_csv("wet_weight/combined_wet.csv")
+wet.dry <-plyr::join(wet, dry, by="EntryID")
+wet.dry <- wet.dry %>% mutate(DM = (Dry/Wet)*100)
+final <- tibble(EntryID=wet.dry$EntryID, DM= wet.dry$DM)
+write.csv(final, "DM.csv", quote=F, row.names=F)
