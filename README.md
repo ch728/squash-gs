@@ -5,3 +5,4 @@ All relevant code and data for the publication "Genomic Prediction and Selection
 1. analysis - scripts used for analysis
 2. genotype_data - raw snp vcfs and filtering scripts
 3. phenotype_data - raw phenotype data and scripts used for processing
+4. selection_code - code showing model used for selection
