@@ -24,7 +24,7 @@ for in_file in os.listdir("."):
                  -export temp.vcf -exportType VCF""" %
                   (",".join(taxa), minCount, minCount))  # subset taxa and filter sites
         fhout = open("renamed_temp.vcf", "w")
-        with open("temp1.vcf") as fh:  # need to rename site cuz tassel sucks
+        with open("temp1.vcf") as fh:  # need to rename site
             for line in fh:
                 if line[0] == "#":
                     fhout.write(line)

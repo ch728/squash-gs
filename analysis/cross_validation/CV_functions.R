@@ -4,7 +4,6 @@
 
 get_weights <- function(pheno.avg, count, h, t, c=0.1){
 	# Calculates weights to use for mean of repeated measures
-	# Method from  
 	n <- pheno.avg[,count]
 	h2 <- rep(h, length(n))
 	t <- rep(t, length(n))

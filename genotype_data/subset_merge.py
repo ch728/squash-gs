@@ -1,5 +1,6 @@
 import os
-# This programs finds the intersect of markers between vcfs using TASSEL.
+# This programs finds the intersect of markers between vcfs and uses
+# vcftoos to subset master vcf file.
 merges = []
 with open("intersect.csv") as fh:  # read in file that specifies merges
     for line in fh:
