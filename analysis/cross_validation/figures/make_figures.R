@@ -6,12 +6,12 @@ library(gridExtra)
 library(RColorBrewer)
 
 
-# Read in data
+### Read in data ###
 within.pred <- read_csv("../within_predictions.csv")
 across.pred <- read_csv("../test_predictions.csv")
 strat.pred <- read_csv("../strat_predictions.csv")
 
-# Make a named vector for changing labels
+### Make a named vector for changing labels ###
 h <- c("a*", "b*", "L*","°Bx", "%DM",
        "FrtCt", "TotalWt", "TotalDM",
        "Len", "Wd", "Wt", "Shp",
@@ -21,7 +21,7 @@ names(h) <- c("a", "b", "L","Brix", "DM",
               "Length", "Width", "Weight", "Shape",
               "C0_uni", "C2_uni", "T1_uni", "Prog", "Test")
               
-# Look at within set predictive abilities
+### Look at within set predictive abilities ###
  within.pred <- rbind(within.pred)
 sets <- c("C0_uni", "C2_uni", "T1_uni")
 res.within <- within.pred %>%
@@ -32,7 +32,7 @@ res.within <- within.pred %>%
 res.within$Trait <- sapply(as.character(res.within$Trait), function(x) h[x], USE.NAMES=F)  # Change Trait names
 res.within$Set <- sapply(as.character(res.within$Set), function(x) h[x], USE.NAMES=F)  # Change Set names
 
-# Add trait class info
+### Add trait class info ###
 qual <- c("a*", "b*", "L*","°Bx", "%DM")
 morph <- c("Len", "Wd", "Wt", "Shp")
 yield <- c("FrtCt", "TotalWt", "TotalDM")
@@ -90,7 +90,7 @@ uni_cv.plt <- arrangeGrob(qual.plt, morph.plt, yld.plt, lg,
                                          gp=gpar(cex=1.5)))
 ggsave("./uni_CV.png", uni_cv.plt, "png", width=10)
 
-#  Make a table summarizing across set predictive abilities
+###  Make a table summarizing across set predictive abilities ###
 across.table <- across.pred %>%
                  group_by(Set, Trait) %>%
                  summarize(r=cor(Pred, Val))
@@ -100,7 +100,7 @@ across.table$Trait <- sapply(as.character(across.table$Trait), function(x) h[x],
 print(xtable(across.table), type="latex", file="across_CV.tex",
       include.rownames=F)
 
-# Make Line plot showing predictive ability for each trait for each pop size
+### Make Line plot showing predictive ability for each trait for each pop size ###
 res.strat <- strat.pred  %>%
         group_by(Rep, Set, Trait) %>%
         summarise(r = cor(Pred, Val))
@@ -121,11 +121,3 @@ qual_strat.plt <- ggplot(filter(res.strat, Type=="Quality"),
 			  theme(legend.position="right", axis.text.x = element_text(angle = 90),
 			        panel.grid.major=element_blank(), panel.grid.minor=element_blank())
 ggsave("./pop_CV.png", qual_strat.plt, "png")
-
-# Summarize results from applying different weights
-# res.weights <- test.weights %>%
-        # group_by(Rep, Set, Trait) %>%
-        # summarise(r = cor(Pred, Val, use="complete.obs")) %>%
-        # group_by( Set, Trait) %>%
-        # summarize(mean= signif(mean(r),2), sd=signif(sd(r),2))
-#write.csv(res.test, "test_summary.csv", quote=F, row.names=F)
