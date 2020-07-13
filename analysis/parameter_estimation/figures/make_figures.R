@@ -2,6 +2,8 @@ library(xtable)
 library(tidyverse)
 library(hash)
 
+
+### Builds tables seen in pubblication ###
 params <- read.csv("../genotypic/parameters.csv", stringsAsFactors=F)
 g.cor <- read.csv("../genotypic/genetic_correlations.csv", stringsAsFactors=F)
 p.cor <- read.csv("../phenotypic/phenotypic_correlations.csv", stringsAsFactors=F)
