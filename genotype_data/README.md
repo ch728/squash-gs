@@ -3,7 +3,7 @@ The fliterered vcf files, scripts, and intermediate files used to obtain the kin
 
 ## Scripts
 * get_master_vcf.py - converts a .hdf5 file produced by the TASSELv5 pipeline to a vcf file. Uses the TASSEL standalone.
-* subset_filter.py - uses .set files to subset and filter each population using the TASSEL standalone.
+* subset_filter.py - uses \*.set files to subset and filter each population using the TASSEL standalone.
 * subset_merge.py - merges data from different populations specified in intersect.csv on common markers using vcftools.
 * impute_kinship.py - imputes and creates kinship matrices for the files specified in impute.txt using the TASSEL standalone.
 
