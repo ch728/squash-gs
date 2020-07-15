@@ -1,0 +1,553 @@
+ ASReml 4.1 [28 Dec 2014] Title: gain.
+   Build mx [05 Oct 2018]   64 bit  Linux (x64)
+ 15 Jul 2020 10:00:02.011    100 Mbyte  selection_gain/asreml_out/gain
+ Licensed to: Cornell University    28-feb-2021         
+ *****************************************************************
+ * Contact support@asreml.co.uk for licensing and support        *
+ *********************************************************** ARG *
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Year  !I
+ Site  !A 4
+ Pop  !A
+ QUALIFIERS: !SKIP 1 !DDF 
+ Cycle 1 value is Weight
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of Weight                                          
+ Summary of 89 records retained of 89 read
+
+  Model term          Size #miss #zero   MinNon0    Mean      MaxNon0  StndDevn
+   1 Year                2     0     0      1     1.1011          2
+   2 Site                4     0     0      1     2.2921          4
+   3 Block               4     0     0      1     2.3146          4
+   4 Pop                 4     0     0      1     2.4382          4
+   5 Plot                2     0     0      1     1.4494          2
+   6 Weight         Variate    0     0  348.4      526.9      820.4      92.83    
+   7 Length                    0     0  11.71      14.00      15.85      1.125    
+   8 Width                     0     0  7.140      8.515      9.880     0.5263    
+   9 Brix                      0     0  8.420      10.80      12.95     0.9810    
+  10 DM                        0     0  9.410      13.87      20.74      2.121    
+  11 L                         0     0  60.59      66.10      70.16      2.105    
+  12 a                         0     0  20.37      24.81      29.83      2.178    
+  13 b                         0     0  63.65      70.01      74.44      2.286    
+  14 Index                     0     0  10.27      12.14      14.80      1.114    
+  15 Cycle                     0     0  1.000      2.719      5.000      1.574    
+  16 Type                2     0     0      1     1.3708          2
+  17 mu                          1
+  18 at(Site,1)          1     0     0   1.000     2.292      4.000    
+  19 at(Site,1).Block            4 18 at(Site,1):   1   3 Block          :    4
+  20 at(Site,2)          1     0     0   1.000     2.292      4.000    
+  21 at(Site,2).Block            4 20 at(Site,2):   1   3 Block          :    4
+  22 at(Site,3)          1     0     0   1.000     2.292      4.000    
+  23 at(Site,3).Block            4 22 at(Site,3):   1   3 Block          :    4
+  24 at(Site,4)          1     0     0   1.000     2.292      4.000    
+  25 at(Site,4).Block            4 24 at(Site,4):   1   3 Block          :    4
+  26 Block.Plot                  8  3 Block     :   4   5 Plot           :    2
+  27 at(Site,1).Block.Plot       8 18 at(Site,1):   1  26 Block.Plot     :    8
+  28 at(Site,2).Block.Plot       8 20 at(Site,2):   1  26 Block.Plot     :    8
+  29 at(Site,3).Block.Plot       8 22 at(Site,3):   1  26 Block.Plot     :    8
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-487.082     S2=  1.0000         87 df    :   8 components restrained
+   2 LogL=-467.604     S2=  1.0000         87 df    :   8 components restrained
+   3 LogL=-443.554     S2=  1.0000         87 df    :   5 components restrained
+   4 LogL=-426.880     S2=  1.0000         87 df    :   4 components restrained
+   5 LogL=-416.604     S2=  1.0000         87 df    :   2 components restrained
+   6 LogL=-410.646     S2=  1.0000         87 df    :   2 components restrained
+   7 LogL=-407.497     S2=  1.0000         87 df    :   2 components restrained
+   8 LogL=-406.323     S2=  1.0000         87 df    :   2 components restrained
+   9 LogL=-406.020     S2=  1.0000         87 df    :   1 components restrained
+  10 LogL=-405.977     S2=  1.0000         87 df    :   1 components restrained
+  11 LogL=-405.975     S2=  1.0000         87 df 
+  12 LogL=-405.975     S2=  1.0000         87 df 
+
+          - - - Results from analysis of Weight - - -
+ LogL:    LogL  Residual        NEDF  NIT Cycle Text
+ LogL: -405.98   1.00000          87   12 Weight "LogL Converged"
+ Akaike Information Criterion      831.95 (assuming 10 parameters).
+ Bayesian Information Criterion    856.61
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4   5310.02       5310.02       1.15   0 P
+ Site_1.Block            IDV_V    4   1580.95       1580.95       0.82   0 P
+ Site_2.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_3.Block            IDV_V    4  0.400000E-03  0.400000E-03   0.00   0 B
+ Site_4.Block            IDV_V    4  0.151740E-02  0.151740E-02   0.00   0 B
+ Site_1.Block.Plot       IDV_V    8  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_2.Block.Plot       IDV_V    8   268.441       268.441       0.30   0 P
+ Site_3.Block.Plot       IDV_V    8  0.160000E-05  0.160000E-05   0.00   0 B
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56   2765.50       2765.50       5.07   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33   3805.54       3805.54       3.44   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       3.0   207.57            <.001
+  15 Cycle                             1      74.3    43.95            <.001
+ Notice: The DenDF values are calculated ignoring fixed/boundary/singular
+             variance parameters using algebraic derivatives.
+
+                     Solution       Standard Error    T-value     T-prev
+  15 Cycle                         
+                    1   -25.1740        3.79737         -6.63
+  17 mu                            
+                    1    609.068        38.9256         15.65
+   2 Site                                  4 effects fitted
+  19 at(Site,1).Block                      4 effects fitted (       1 are zero)
+  21 at(Site,2).Block                      4 effects fitted
+  23 at(Site,3).Block                      4 effects fitted
+  25 at(Site,4).Block                      4 effects fitted (       1 are zero)
+  27 at(Site,1).Block.Plot                 8 effects fitted (       2 are zero)
+  28 at(Site,2).Block.Plot                 8 effects fitted
+  29 at(Site,3).Block.Plot                 8 effects fitted
+ SLOPES FOR LOG(ABS(RES)) on LOG(PV) for Section  12
+   0.42
+ Finished: 15 Jul 2020 10:00:10.186   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 2 value is Length
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of Length                                          
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-21.8209     S2=  1.0000         87 df    :   5 components restrained
+   2 LogL=-15.2391     S2=  1.0000         87 df    :   5 components restrained
+   3 LogL=-14.4637     S2=  1.0000         87 df    :   5 components restrained
+   4 LogL=-13.5544     S2=  1.0000         87 df    :   5 components restrained
+   5 LogL=-14.0436     S2=  1.0000         87 df    :   4 components restrained
+   6 LogL=-13.5145     S2=  1.0000         87 df    :   2 components restrained
+   7 LogL=-13.4273     S2=  1.0000         87 df    :   2 components restrained
+   8 LogL=-13.4220     S2=  1.0000         87 df    :   2 components restrained
+   9 LogL=-13.4217     S2=  1.0000         87 df    :   2 components restrained
+  10 LogL=-13.4217     S2=  1.0000         87 df 
+
+          - - - Results from analysis of Length - - -
+ LogL:  -13.42   1.00000          87   10 Length "LogL Converged"
+ Akaike Information Criterion       46.84 (assuming 10 parameters).
+ Bayesian Information Criterion     71.50
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4  0.927052E-01  0.927052E-01   0.99   0 P
+ Site_1.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_2.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_3.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_4.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_1.Block.Plot       IDV_V    8  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_2.Block.Plot       IDV_V    8  0.742068E-02  0.742068E-02   0.10   0 P
+ Site_3.Block.Plot       IDV_V    8  0.101193E-06  0.101193E-06   0.00   0 B
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56  0.459921      0.459921       5.18   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33  0.358232      0.358232       3.42   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       2.9  6928.94            <.001
+  15 Cycle                             1      65.3   168.93            <.001
+ SLOPES FOR LOG(ABS(RES)) on LOG(PV) for Section  21
+   0.41
+ Finished: 15 Jul 2020 10:00:10.198   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 3 value is Width
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of Width                                           
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL= 17.3940     S2=  1.0000         87 df    :   5 components restrained
+   2 LogL= 29.4325     S2=  1.0000         87 df    :   4 components restrained
+   3 LogL= 34.0720     S2=  1.0000         87 df    :   5 components restrained
+   4 LogL= 35.4992     S2=  1.0000         87 df    :   5 components restrained
+   5 LogL= 35.7326     S2=  1.0000         87 df    :   5 components restrained
+   6 LogL= 35.7604     S2=  1.0000         87 df    :   1 components restrained
+   7 LogL= 35.7605     S2=  1.0000         87 df 
+   8 LogL= 35.7605     S2=  1.0000         87 df 
+
+          - - - Results from analysis of Width - - -
+ LogL:   35.76   1.00000          87    8 Width "LogL Converged"
+ Akaike Information Criterion      -51.52 (assuming 10 parameters).
+ Bayesian Information Criterion    -26.86
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4  0.167868      0.167868       1.15   0 P
+ Site_1.Block            IDV_V    4  0.396586E-01  0.396586E-01   0.70   0 P
+ Site_2.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_3.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_4.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_1.Block.Plot       IDV_V    8  0.476721E-07  0.476721E-07   0.00   0 B
+ Site_2.Block.Plot       IDV_V    8  0.535913E-01  0.535913E-01   1.21   0 P
+ Site_3.Block.Plot       IDV_V    8  0.101193E-06  0.101193E-06   0.00   0 B
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56  0.136567      0.136567       5.08   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33  0.841101E-01  0.841101E-01   3.42   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       3.0  1662.69            <.001
+  15 Cycle                             1      58.5    28.84            <.001
+ SLOPES FOR LOG(ABS(RES)) on LOG(PV) for Section  32
+   0.67
+ Finished: 15 Jul 2020 10:00:10.210   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 4 value is Brix
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of Brix                                            
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-20.1667     S2=  1.0000         87 df    :   4 components restrained
+   2 LogL=-14.8927     S2=  1.0000         87 df    :   3 components restrained
+   3 LogL=-12.2016     S2=  1.0000         87 df    :   3 components restrained
+   4 LogL=-11.1688     S2=  1.0000         87 df    :   3 components restrained
+   5 LogL=-10.9973     S2=  1.0000         87 df    :   4 components restrained
+   6 LogL=-10.9902     S2=  1.0000         87 df    :   1 components restrained
+   7 LogL=-10.9849     S2=  1.0000         87 df    :   1 components restrained
+   8 LogL=-10.9846     S2=  1.0000         87 df    :   1 components restrained
+   9 LogL=-10.9846     S2=  1.0000         87 df 
+
+          - - - Results from analysis of Brix - - -
+ LogL:  -10.98   1.00000          87    9 Brix "LogL Converged"
+ Akaike Information Criterion       41.97 (assuming 10 parameters).
+ Bayesian Information Criterion     66.63
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4  0.288605      0.288605       1.14   0 P
+ Site_1.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_2.Block            IDV_V    4  0.888796E-02  0.888796E-02   0.13   0 P
+ Site_3.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_4.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_1.Block.Plot       IDV_V    8  0.146275E-01  0.146275E-01   0.18   0 P
+ Site_2.Block.Plot       IDV_V    8  0.232907E-01  0.232907E-01   0.26   0 P
+ Site_3.Block.Plot       IDV_V    8  0.341748E-06  0.341748E-06   0.00   0 B
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56  0.435774      0.435774       4.83   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33  0.283465      0.283465       3.29   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       3.0  1495.58            <.001
+  15 Cycle                             1      57.9    97.18            <.001
+ SLOPES FOR LOG(ABS(RES)) on LOG(PV) for Section  41
+   4.44
+ Finished: 15 Jul 2020 10:00:10.229   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 5 value is DM
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of DM                                              
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-74.2092     S2=  1.0000         87 df    :   3 components restrained
+   2 LogL=-67.2934     S2=  1.0000         87 df    :   4 components restrained
+   3 LogL=-62.6167     S2=  1.0000         87 df    :   4 components restrained
+   4 LogL=-60.1149     S2=  1.0000         87 df    :   4 components restrained
+   5 LogL=-59.0707     S2=  1.0000         87 df    :   1 components restrained
+   6 LogL=-58.5998     S2=  1.0000         87 df 
+   7 LogL=-58.5017     S2=  1.0000         87 df 
+   8 LogL=-58.4912     S2=  1.0000         87 df 
+   9 LogL=-58.4909     S2=  1.0000         87 df 
+  10 LogL=-58.4909     S2=  1.0000         87 df 
+
+          - - - Results from analysis of DM - - -
+ LogL:  -58.49   1.00000          87   10 DM "LogL Converged"
+ Akaike Information Criterion      136.98 (assuming 10 parameters).
+ Bayesian Information Criterion    161.64
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4   1.67582       1.67582       1.13   0 P
+ Site_1.Block            IDV_V    4  0.436869      0.436869       0.58   0 P
+ Site_2.Block            IDV_V    4  0.113027      0.113027       0.66   0 P
+ Site_3.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_4.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_1.Block.Plot       IDV_V    8  0.163874      0.163874       0.37   0 P
+ Site_2.Block.Plot       IDV_V    8  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_3.Block.Plot       IDV_V    8  0.190693E-06  0.190693E-06   0.00   0 B
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56   1.46352       1.46352       4.93   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33  0.570836      0.570836       3.70   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       2.9   428.40            <.001
+  15 Cycle                             1      54.0   168.69            <.001
+ Finished: 15 Jul 2020 10:00:10.248   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 6 value is L
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of L                                               
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-90.1190     S2=  1.0000         87 df    :   3 components restrained
+   2 LogL=-83.5958     S2=  1.0000         87 df    :   3 components restrained
+   3 LogL=-75.8471     S2=  1.0000         87 df    :   4 components restrained
+   4 LogL=-70.4332     S2=  1.0000         87 df    :   6 components restrained
+   5 LogL=-67.6782     S2=  1.0000         87 df    :   4 components restrained
+   6 LogL=-66.3369     S2=  1.0000         87 df    :   4 components restrained
+   7 LogL=-65.7739     S2=  1.0000         87 df    :   3 components restrained
+   8 LogL=-65.5520     S2=  1.0000         87 df    :   1 components restrained
+   9 LogL=-65.5266     S2=  1.0000         87 df 
+  10 LogL=-65.5261     S2=  1.0000         87 df 
+  11 LogL=-65.5261     S2=  1.0000         87 df 
+
+          - - - Results from analysis of L - - -
+ LogL:  -65.53   1.00000          87   11 L "LogL Converged"
+ Akaike Information Criterion      151.05 (assuming 10 parameters).
+ Bayesian Information Criterion    175.71
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4   3.56138       3.56138       1.20   0 P
+ Site_1.Block            IDV_V    4  0.469088E-06  0.469088E-06   0.00   0 B
+ Site_2.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_3.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_4.Block            IDV_V    4  0.316617E-01  0.316617E-01   0.06   0 P
+ Site_1.Block.Plot       IDV_V    8  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_2.Block.Plot       IDV_V    8  0.272339E-06  0.272339E-06   0.00   0 B
+ Site_3.Block.Plot       IDV_V    8  0.101991E-05  0.101991E-05   0.00   0 B
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56   1.25802       1.25802       5.13   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33   1.34178       1.34178       3.73   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       3.0  4812.00            <.001
+  15 Cycle                             1      80.0    16.71            <.001
+ SLOPES FOR LOG(ABS(RES)) on LOG(PV) for Section  62
+  24.84
+           1  possible outliers: see .res file
+ Finished: 15 Jul 2020 10:00:10.268   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 7 value is a
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of a                                               
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-92.7465     S2=  1.0000         87 df    :   2 components restrained
+   2 LogL=-87.1799     S2=  1.0000         87 df    :   4 components restrained
+   3 LogL=-81.2770     S2=  1.0000         87 df    :   4 components restrained
+   4 LogL=-77.4698     S2=  1.0000         87 df    :   3 components restrained
+   5 LogL=-75.7044     S2=  1.0000         87 df    :   2 components restrained
+   6 LogL=-74.8123     S2=  1.0000         87 df    :   1 components restrained
+   7 LogL=-74.5822     S2=  1.0000         87 df    :   1 components restrained
+   8 LogL=-74.5548     S2=  1.0000         87 df    :   1 components restrained
+   9 LogL=-74.5541     S2=  1.0000         87 df    :   1 components restrained
+  10 LogL=-74.5541     S2=  1.0000         87 df 
+
+          - - - Results from analysis of a - - -
+ LogL:  -74.55   1.00000          87   10 a "LogL Converged"
+ Akaike Information Criterion      169.11 (assuming 10 parameters).
+ Bayesian Information Criterion    193.77
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4   2.61147       2.61147       1.17   0 P
+ Site_1.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_2.Block            IDV_V    4  0.232353E-05  0.232353E-05   0.00   0 B
+ Site_3.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_4.Block            IDV_V    4  0.347492      0.347492       0.47   0 P
+ Site_1.Block.Plot       IDV_V    8  0.743939E-06  0.743939E-06   0.00   0 B
+ Site_2.Block.Plot       IDV_V    8  0.560108      0.560108       1.08   0 P
+ Site_3.Block.Plot       IDV_V    8  0.184077E-01  0.184077E-01   0.07   0 P
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56   1.68037       1.68037       4.82   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33   1.16752       1.16752       3.27   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       3.0   920.34            <.001
+  15 Cycle                             1      56.2    89.16            <.001
+ SLOPES FOR LOG(ABS(RES)) on LOG(PV) for Section  71
+   2.45
+ Finished: 15 Jul 2020 10:00:10.284   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 8 value is b
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of b                                               
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-111.714     S2=  1.0000         87 df    :   4 components restrained
+   2 LogL=-104.415     S2=  1.0000         87 df    :   4 components restrained
+   3 LogL=-97.2731     S2=  1.0000         87 df    :   5 components restrained
+   4 LogL=-93.4262     S2=  1.0000         87 df    :   5 components restrained
+   5 LogL=-92.2053     S2=  1.0000         87 df    :   3 components restrained
+   6 LogL=-91.8041     S2=  1.0000         87 df    :   3 components restrained
+   7 LogL=-91.6869     S2=  1.0000         87 df    :   1 components restrained
+   8 LogL=-91.6792     S2=  1.0000         87 df    :   1 components restrained
+   9 LogL=-91.6791     S2=  1.0000         87 df 
+  10 LogL=-91.6791     S2=  1.0000         87 df 
+
+          - - - Results from analysis of b - - -
+ LogL:  -91.68   1.00000          87   10 b "LogL Converged"
+ Akaike Information Criterion      203.36 (assuming 10 parameters).
+ Bayesian Information Criterion    228.02
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4   1.66556       1.66556       1.14   0 P
+ Site_1.Block            IDV_V    4  0.614068E-06  0.614068E-06   0.00   0 B
+ Site_2.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_3.Block            IDV_V    4  0.339015E-06  0.339015E-06   0.00   0 B
+ Site_4.Block            IDV_V    4  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_1.Block.Plot       IDV_V    8  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_2.Block.Plot       IDV_V    8  0.160000E-05  0.160000E-05   0.00   0 B
+ Site_3.Block.Plot       IDV_V    8  0.368160      0.368160       0.68   0 P
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56   2.48432       2.48432       4.78   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33   2.18648       2.18648       3.86   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       3.0 10850.12            <.001
+  15 Cycle                             1      75.3    54.19            <.001
+ Finished: 15 Jul 2020 10:00:10.296   LogL Converged
+ Folder: /local/workdir/ch728/squash-gs/analysis/selection_gain
+ Cycle 9 value is Index
+ Reading /workdir/ch728/squash-gs/analysis/selection_gain/gain.csv  FREE FORMAT skipping     1 lines
+
+ Univariate analysis of Index                                           
+ Summary of 89 records retained of 89 read
+
+ Notice: In expanding at(Type), Type is assumed to have 2 levels. If
+         more, specify the number in the variable definition for Type
+ Forming       46 equations:   2 dense.
+ Initial updates will be shrunk by factor    0.316
+   1 LogL=-28.4065     S2=  1.0000         87 df    :   2 components restrained
+   2 LogL=-24.4704     S2=  1.0000         87 df    :   2 components restrained
+   3 LogL=-22.1757     S2=  1.0000         87 df    :   2 components restrained
+   4 LogL=-21.2901     S2=  1.0000         87 df    :   3 components restrained
+   5 LogL=-21.1414     S2=  1.0000         87 df    :   4 components restrained
+   6 LogL=-21.2797     S2=  1.0000         87 df    :   2 components restrained
+   7 LogL=-21.1487     S2=  1.0000         87 df    :   1 components restrained
+   8 LogL=-21.1397     S2=  1.0000         87 df 
+   9 LogL=-21.1397     S2=  1.0000         87 df 
+
+          - - - Results from analysis of Index - - -
+ LogL:  -21.14   1.00000          87    9 Index "LogL Converged"
+ Local CYCLE LogL Peak at CYCLE:    3 Width LogL:    35.76 Deviance:  883.47
+ Akaike Information Criterion       62.28 (assuming 10 parameters).
+ Bayesian Information Criterion     86.94
+
+ Model_Term                             Sigma         Sigma   Sigma/SE   % C
+ Site                    IDV_V    4  0.179492      0.179492       0.95   0 P
+ Site_1.Block            IDV_V    4  0.126846      0.126846       0.64   0 P
+ Site_2.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_3.Block            IDV_V    4  0.101193E-06  0.101193E-06   0.00   0 B
+ Site_4.Block            IDV_V    4  0.851084E-01  0.851084E-01   0.41   0 P
+ Site_1.Block.Plot       IDV_V    8  0.815749E-07  0.815749E-07   0.00   0 B
+ Site_2.Block.Plot       IDV_V    8  0.458123E-01  0.458123E-01   0.51   0 P
+ Site_3.Block.Plot       IDV_V    8  0.186489E-02  0.186489E-02   0.02   0 P
+ sat(Type,1).id(units)           56 effects
+ Residual_1              SCA_V   56  0.559642      0.559642       4.72   0 P
+ sat(Type,2).id(units)           33 effects
+ Residual_2              SCA_V   33  0.331750      0.331750       3.27   0 P
+ Warning: Code B - fixed at a boundary (!GP)       F - fixed by user
+               ? - liable to change from P to B    P - positive definite
+               C - Constrained by user (!VCC)      U - unbounded 
+               S - Singular Information matrix
+ S means there is no information in the data for this parameter.
+ Very small components with Comp/SE ratios of zero sometimes indicate poor
+           scaling.  Consider rescaling the design matrix in such cases.
+
+                                   Wald F statistics
+     Source of Variation           NumDF     DenDF    F-inc            P-inc
+  17 mu                                1       2.7  2746.39            <.001
+  15 Cycle                             1      52.0   125.37            <.001
+ SLOPES FOR LOG(ABS(RES)) on LOG(PV) for Section  91
+   2.63
+           1  possible outliers: see .res file
+ Best LogL    35.76   1.00000          87    8 Width LogL Converged
+ Finished: 15 Jul 2020 10:00:10.308   LogL Converged

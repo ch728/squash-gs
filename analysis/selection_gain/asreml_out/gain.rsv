@@ -1,0 +1,31 @@
+ 53 14 1805 206
+# This .rsv file holds parameter values between runs of ASReml and
+# is not normally modified by the User.  The current values of the
+# the variance parameters are listed as a block on the following lines.
+# They are then listed again with identifying information
+# in a form that the user may edit.
+   0.000000       0.000000       0.000000      0.1794924      0.1268461      0.1011929E-06  0.1011929E-06  0.8510842E-01
+   0.000000      0.8157489E-07  0.4581226E-01  0.1864887E-02  0.5596418      0.3317499    
+RSTRUCTURE               2    1    3
+ VARIANCE                1    1    0
+  13, V, P,   0.55964184       0   0
+ STRUCTURE              56    0    0
+ VARIANCE                2    1    0
+  14, V, P,   0.33174987       0   0
+ STRUCTURE              33    0    0
+Site                                  1    1
+   4, V, P,   0.17949244       0   0
+at(Site,1).Block                      1    1
+   5, V, P,   0.12684613       0   0
+at(Site,2).Block                      1    1
+   6, V, B,   0.10119290E-06   0   0
+at(Site,3).Block                      1    1
+   7, V, B,   0.10119290E-06   0   0
+at(Site,4).Block                      1    1
+   8, V, P,   0.85108421E-01   0   0
+at(Site,1).Block.Plot                 1    1
+  10, V, B,   0.81574890E-07   0   0
+at(Site,2).Block.Plot                 1    1
+  11, V, P,   0.45812258E-01   0   0
+at(Site,3).Block.Plot                 1    1
+  12, V, P,   0.18648871E-02   0   0

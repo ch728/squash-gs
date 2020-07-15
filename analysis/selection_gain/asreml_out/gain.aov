@@ -9,8 +9,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1  207.1178  207.1178    1.0000    2.9984
- Cycle                    1     1   78.9104   78.9104    1.0000  195.1649
+ mu                       1     1  207.5741  207.5741    1.0000    2.9875
+ Cycle                    1     1   43.9482   43.9482    1.0000   74.2677
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -22,8 +22,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1 7131.1251 7131.1251    1.0000    2.9987
- Cycle                    1     1  219.9410  219.9410    1.0000  239.0545
+ mu                       1     1 6928.9446 6928.9446    1.0000    2.9129
+ Cycle                    1     1  168.9260  168.9260    1.0000   65.2841
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -35,8 +35,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1 1642.1915 1642.1915    1.0000    3.0144
- Cycle                    1     1   44.8594   44.8594    1.0000  262.3200
+ mu                       1     1 1662.6906 1662.6906    1.0000    3.0026
+ Cycle                    1     1   28.8376   28.8376    1.0000   58.5220
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -48,8 +48,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1 1498.6859 1498.6859    1.0000    2.9672
- Cycle                    1     1  144.1305  144.1305    1.0000  274.5657
+ mu                       1     1 1495.5827 1495.5827    1.0000    2.9916
+ Cycle                    1     1   97.1825   97.1825    1.0000   57.8758
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -61,8 +61,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1  423.1281  423.1281    1.0000    2.8555
- Cycle                    1     1  207.7975  207.7975    1.0000  329.3227
+ mu                       1     1  428.3983  428.3983    1.0000    2.8701
+ Cycle                    1     1  168.6902  168.6902    1.0000   54.0304
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -74,8 +74,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1 4856.9129 4856.9129    1.0000    3.0235
- Cycle                    1     1   61.3897   61.3897    1.0000  305.4534
+ mu                       1     1 4812.0037 4812.0037    1.0000    3.0175
+ Cycle                    1     1   16.7093   16.7093    1.0000   80.0185
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -87,8 +87,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1  919.4812  919.4812    1.0000    2.9924
- Cycle                    1     1  143.8452  143.8452    1.0000  271.6982
+ mu                       1     1  920.3370  920.3370    1.0000    2.9950
+ Cycle                    1     1   89.1596   89.1596    1.0000   56.1868
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -100,8 +100,8 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     111047.204011047.2040    1.0000    2.9955
- Cycle                    1     1   93.4958   93.4958    1.0000  263.5572
+ mu                       1     110850.120210850.1202    1.0000    3.0499
+ Cycle                    1     1   54.1896   54.1896    1.0000   75.3272
  This file reports details concerning the calculation and testing of the
            Wald F-statistics reported in the .asr file.
 
@@ -113,5 +113,5 @@
 
      Incremental Wald F statistics - calculation of Denominator degrees of freedom
  Source                Size NumDF   F-value  Lambda*F    Lambda   DenDF
- mu                       1     1 2805.3751 2805.3751    1.0000    2.6669
- Cycle                    1     1  196.2311  196.2311    1.0000  297.7717
+ mu                       1     1 2746.3946 2746.3946    1.0000    2.7115
+ Cycle                    1     1  125.3654  125.3654    1.0000   51.9600
