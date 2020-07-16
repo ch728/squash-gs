@@ -48,4 +48,4 @@ GS3.1_asreml_predictions<-asreml_predictions[grep("GS3.1*",rownames(asreml_predi
 GS3.1_asreml_index<-as.data.frame(rowSums(GS3.1_asreml_predictions[,2:4]))
 GS3.1_asreml_index$gid=rownames(GS3.1_asreml_index)
 GS3.1_asreml_index_sorted<-GS3.1_asreml_index[order(-GS3.1_asreml_index$`rowSums(GS3.1_asreml_predictions[, 2:4])`),]
-write.table(GS3.1_asreml_index_sorted[1:20,],file="GS3.1_top_20_selection.txt",sep="\t",row.names=F)
+write.table(GS3.1_asreml_index_sorted[1:20,],file="selection.txt",sep="\t",row.names=F)
