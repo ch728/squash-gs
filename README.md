@@ -1,5 +1,5 @@
 # squash-gs
-All relevant code and data for the publication "Genomic Prediction and Selection for Fruit Quality Traits in Winter Squash" in the journal [G3: Genes, Genomes,Genetics](https://www.g3journal.org/).
+All relevant code and data for the manuscript "Genomic Prediction and Selection for Fruit Quality Traits in Winter Squash".
 
 ## Table of contents
 1. analysis - scripts used for cross-validation, parameter estimation, and calculating gain from selection
