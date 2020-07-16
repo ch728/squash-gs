@@ -3,17 +3,17 @@ library(sommer)
 library(reshape2)
 
 ### Read in phenotpe data ###
-pheno<-read.csv("../../../../GS3.1/phenotypes/ALL/GS3.1_phenotypes.csv")
+pheno<-read.csv("phenotypes.csv")
 
 ### Read in genotype data ###
-geno<-read.table("../../../RE_TASSEL/Genotype_tables/GS4_GS3.1_RD2_MAF0.05_0.8_0.6.txt",colClasses="character",header=T,row.names=1)
+geno<-read.table("geno.txt",colClasses="character",header=T,row.names=1)
 geno2<-t(apply(geno,1,function(x) gsub("0","N",x)))
 geno2<-t(apply(geno2,1,function(x) gsub("-","N",x)))
 
 ### Get dosage ###
 dosage<-atcg1234_2(geno,maf=0.05,imp=F)
-dosage2<-atcg1234_2(geno2,maf=0.05,imp=F)
-#get Amat
+
+### Get Amat ###
 Amat1<-A.mat(dosage,impute.method="EM")
   
 ### Get inverse ###
